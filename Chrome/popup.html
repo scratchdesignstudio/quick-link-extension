@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <style>
+      body {
+        white-space: nowrap;
+      }
+	.button {
+		border-radius: 5px;
+		background-color: #0c9ce4;
+		border: none;
+		color: #ffffff;
+		text-align: center;
+		font-size: 24px;
+		padding: 20px;
+		width: 80%;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin: 5px;
+		height:40px;
+		line-height:0px;
+	}
+
+	.button span {
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		transition: 0.5s;
+	}
+
+	.button span:after {
+		content: '»';
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		right: -20px;
+		transition: 0.5s;
+	}
+
+	.button:hover span {
+		padding-right: 10%;
+	}
+
+	.button:hover span:after {
+		opacity: 1;
+		right: 0;
+	}
+    </style>
+    <script src="popup.js"></script>
+	<title>Popup</title>
+  </head>
+  <body>
+	<div style="height:40px;width:100%;background-color:#0c9ce4;color:white;"><h1>&nbsp;Quick Link Extension:&nbsp;</h1></div>
+	<div style="height:100px;width:100%;background-color:AliceBlue;color:black;white-space:pre-wrap; "><h3>Click on the button to go the the next project.</h3></div>
+	<button class="button"><span>Click here!</span></button>
+    <p id="linker"></p>
+  </body>
+</html>
