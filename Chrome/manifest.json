@@ -11,6 +11,7 @@
     "default_title": "Review the next project!"
   },
   "permissions": [
+    "https://crossorigin.me/",
     "https://api.scratch.mit.edu/",
     "http://api.scratch.mit.edu/",
     "activeTab"
