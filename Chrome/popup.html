@@ -3,60 +3,35 @@
   <head>
 	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <style>
-    body {
-    	white-space: nowrap;
-    	width:260px;
-    	height:auto;
-        }
+    body {white-space: nowrap; width:300px; height:auto; background-color:#f8f8f8;}
 
-	.button {
-		border-radius: 5px;
-		background-color: #0c9ce4;
-		border: none;
-		color: #ffffff;
-		text-align: center;
-		font-size: 24px;
-		padding: 20px;
-		width: 80%;
-		transition: all 0.5s;
-		cursor: pointer;
-		margin: 5px;
-		height:40px;
-		line-height:0px;
-	}
+	.button {border-radius: 5px; background-color: #0c9ce4; border: none; color: #ffffff; text-align: center; font-size: 24px; padding: 20px; width: 80%; transition: all 0.5s; cursor: pointer; margin-left: 10%; height:40px; line-height:0px;}
 
-	.button span {
-		cursor: pointer;
-		display: inline-block;
-		position: relative;
-		transition: 0.5s;
-	}
+	.linker {border-radius: 5px; background-color:#c1e2ff; border: none; color:black; text-align: center; font-size: 24px; padding: 20px; width: 80%; transition: all 0.5s; cursor: pointer; margin-left: 10%; height:40px; line-height:0px;}
 
-	.button span:after {
-		content: '»';
-		position: absolute;
-		opacity: 0;
-		top: 0;
-		right: -20px;
-		transition: 0.5s;
-	}
+	.button span {cursor: pointer; display: inline-block; position: relative; transition: 0.5s;}
+	
+	.linker span {cursor: pointer; display: inline-block; position: relative; transition: 0.5s;}
+	
+	.button span:after {content: '»'; position: absolute; opacity: 0; top: 0; right: -20px; transition: 0.5s;}
 
-	.button:hover span {
-		padding-right: 10%;
-	}
+	.linker span:after {content: '»'; position: absolute; opacity: 0; top: 0; right: -20px; transition: 0.5s;}
+	
+	.button:hover span {padding-right: 10%;}
 
-	.button:hover span:after {
-		opacity: 1;
-		right: 0;
-	}
+	.linker:hover span {padding-right: 10%;}
+	
+	.button:hover span:after {opacity: 1; right: 0;}
+
+	.linker:hover span:after {opacity: 1; right: 0;}
+
     </style>
     <script src="popup.js"></script>
 	<title>Popup</title>
   </head>
   <body>
-	<div style="height:40px;width:100%;background-color:#0c9ce4;color:white;"><h1>&nbsp;Quick Link Extension:&nbsp;</h1></div>
-	<div style="height:45px;width:100%;background-color:AliceBlue;color:black;white-space:pre-wrap; "><h3>Click on the button to go the next project.</h3></div>
-	<button class="button"><span>Click here!</span></button>
-    <p id="linker"></p>
+	<div style="height:30px; width:100%; background-color:#0c9ce4; color:white; line-height:inherit; vertical-align:middle;"><!--<img src="icon.png" alt="Popup logo" height="35" width="35" ></img>--><p style="display:block; font-size: 6vw; font-weight:bold; text-align:center;">Quick Link Extension:</p></div>
+	<div style="height:inherit; width:100%; background-color:#c1e2ff; color:black; white-space:pre-wrap; text-align:-webkit-center;"><p style="display:block; font-size:small; font-weight:bold; text-align:center;"><br>Click on the button to go the next project.<br><br></p></div>
+	<button class="button"><span>Click here!</span></button><br><br>
   </body>
 </html>
