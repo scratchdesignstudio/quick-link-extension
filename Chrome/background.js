@@ -104,7 +104,7 @@ chrome.browserAction.onClicked.addListener(function(activeTab){
     }
 
     function changeLink(link){
-      chrome.tabs.create({ url: link });
+      window.open(link);
     }
 
     function nextLink(){
